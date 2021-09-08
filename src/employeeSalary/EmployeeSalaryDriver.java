@@ -54,15 +54,15 @@ public class EmployeeSalaryDriver {
         empSalObj2.setTaxRate(11.45);
         empSalObj2.setPfRate(10.5);
 
-        System.out.print("Enter the bonus of the Employee: ");
+        System.out.print("Enter the new bonus of the Employee: ");
         double bonusNew = scan.nextDouble();
 
         System.out.println(empSalObj2.toString());
 
-        System.out.println("The monthly salary of the Employee is: " + empSalObj1.calcMonthlySalary());
-        System.out.println("The monthly insurance of the Employee is: " + empSalObj1.calcMonthlyInsurance());
-        System.out.println("The monthly pf of the Employee is: " + empSalObj1.calcMonthlyPfAmount());
-        System.out.println("The annual gross salary of the Employee is: " + empSalObj1.calcAnnualGrossSalary(bonusNew));
-        System.out.println("The gross annual net pay of the Employee is: " + empSalObj1.calcAnnualNetPay(bonusNew));
+        System.out.println("The monthly salary of the Employee is: " + empSalObj2.calcMonthlySalary());
+        System.out.println("The monthly insurance of the Employee is: " + empSalObj2.calcMonthlyInsurance());
+        System.out.println("The monthly pf of the Employee is: " + empSalObj2.calcMonthlyPfAmount());
+        System.out.println("The annual gross salary of the Employee is: " + empSalObj2.calcAnnualGrossSalary(bonusNew));
+        System.out.println("The gross annual net pay of the Employee is: " + empSalObj2.calcAnnualNetPay(bonusNew));
     }
 }
