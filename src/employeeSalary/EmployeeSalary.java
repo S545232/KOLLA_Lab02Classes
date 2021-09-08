@@ -67,29 +67,29 @@ public class EmployeeSalary {
         this.hours = hours;
     }
 
-    public double calcMonthlySalary(double hourlyPay) {
-        return hourlyPay * 40;
+    public double calcMonthlySalary() {
+        return this.hourlyRate * 40 * 4;
     }
 
-    public double calcMonthlyInsurance(double monthlySalary, double insuranceRate) {
-        return (monthlySalary * insuranceRate) / 100;
+    public double calcMonthlyInsurance() {
+        return (this.calcMonthlySalary() * this.insuranceRate) / 100;
     }
 
-    public double calcMonthlyPfAmount(double monthlySalary, double pfRate) {
-        return (monthlySalary * pfRate) / 100;
+    public double calcMonthlyPfAmount() {
+        return (this.calcMonthlySalary() * this.pfRate) / 100;
     }
 
-    public double calcAnnualGrossSalary(double annualSalary, double bonus) {
-        return annualSalary + bonus;
+    public double calcAnnualGrossSalary(double bonus) {
+        return (this.calcMonthlySalary() * 12) + bonus;
     }
 
-    public double calcAnnualNetPay(double annualGrossSalary, double taxRate, double annualInsurance, double annualPfAmount) {
-        return annualGrossSalary - (annualGrossSalary * taxRate) - annualInsurance - annualPfAmount;
+    public double calcAnnualNetPay(double bonus) {
+        return this.calcAnnualGrossSalary(bonus) - (this.calcAnnualGrossSalary(bonus) * this.taxRate) - (this.calcMonthlyInsurance() * 12) - (this.calcMonthlyPfAmount() * 12);
     }
 
     @Override
     public String toString() {
-        return "EmployeeSalary{" + "hourlyRate=" + hourlyRate + ", insuranceRate=" + insuranceRate + ", taxRate=" + taxRate + ", pfRate=" + pfRate + ", hours=" + hours + '}';
+        return "hourlyRate: " + hourlyRate + ", insuranceRate: " + insuranceRate + ", taxRate: " + taxRate + ", pfRate: " + pfRate + ", hours: " + hours;
     }
-
+    
 }
