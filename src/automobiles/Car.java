@@ -101,10 +101,10 @@ public class Car {
 //        return "Car{" + "carModel=" + carModel + ", carManufacturer=" + carManufacturer + ", color=" + color + ", mileage=" + mileage + ", speed=" + speed + ", yearofManufacturer=" + yearofManufacturer + ", isElectric=" + isElectric + '}';
           return "carModel=" + carModel 
                   + "\ncolor=" + color
-                  + "\ncarManufacturer=" + carManufacturer
-                  + "\nyearofManufacturer=" + yearofManufacturer
+                  + "\nCarManufacturer=" + carManufacturer
+                  + "\nyearofManfacturer=" + yearofManufacturer
                   + "\nspeed=" + speed
                   + "\nmileage=" + mileage   
-                  + "\nisElectric=" + isElectric;
+                  + "\nisElecric=" + isElectric;
     }
 }
