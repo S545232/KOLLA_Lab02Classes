@@ -49,6 +49,12 @@ public class EmployeeSalaryDriver {
         empSalObj2.setHours(40);
         System.out.println(empSalObj2.toString());
 
+        System.out.println("The monthly salary of the Employee is: " + empSalObj2.calcMonthlySalary());
+        System.out.println("The monthly insurance of the Employee is: " + empSalObj2.calcMonthlyInsurance());
+        System.out.println("The monthly pf of the Employee is: " + empSalObj2.calcMonthlyPfAmount());
+        System.out.println("The annual gross salary of the Employee is: " + empSalObj2.calcAnnualGrossSalary(bonus));
+        System.out.println("The gross annual net pay of the Employee is: " + empSalObj2.calcAnnualNetPay(bonus));
+
         empSalObj2.setHourlyRate(35.0);
         empSalObj2.setInsuranceRate(12.50);
         empSalObj2.setTaxRate(11.45);
@@ -57,8 +63,8 @@ public class EmployeeSalaryDriver {
         System.out.print("Enter the new bonus of the Employee: ");
         double bonusNew = scan.nextDouble();
 
+        System.out.println("The details of empSalObj2 object are as follows:");
         System.out.println(empSalObj2.toString());
-
         System.out.println("The monthly salary of the Employee is: " + empSalObj2.calcMonthlySalary());
         System.out.println("The monthly insurance of the Employee is: " + empSalObj2.calcMonthlyInsurance());
         System.out.println("The monthly pf of the Employee is: " + empSalObj2.calcMonthlyPfAmount());

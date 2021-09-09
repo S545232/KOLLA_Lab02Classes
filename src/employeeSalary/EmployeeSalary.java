@@ -84,7 +84,7 @@ public class EmployeeSalary {
     }
 
     public double calcAnnualNetPay(double bonus) {
-        return this.calcAnnualGrossSalary(bonus) - (this.calcAnnualGrossSalary(bonus) * this.taxRate) - (this.calcMonthlyInsurance() * 12) - (this.calcMonthlyPfAmount() * 12);
+        return this.calcAnnualGrossSalary(bonus) - (this.calcAnnualGrossSalary(bonus) * this.taxRate/100) - (this.calcMonthlyInsurance() * 12) - (this.calcMonthlyPfAmount() * 12);
     }
 
     @Override
