@@ -89,7 +89,7 @@ public class EmployeeSalary {
 
     @Override
     public String toString() {
-        return "hourlyRate: " + hourlyRate + ", insuranceRate: " + insuranceRate + ", taxRate: " + taxRate + ", pfRate: " + pfRate + ", hours: " + hours;
+        return "hourlyRate: " + hourlyRate + ", insuranceRate: " + insuranceRate + ", taxRate: " + taxRate + ", pfRate: " + pfRate + ", HOURS: " + hours;
     }
     
 }

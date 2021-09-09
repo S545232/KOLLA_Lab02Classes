@@ -15,8 +15,10 @@ public class EmployeeSalaryDriver {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        
+        System.out.println("Testing the EmployeeSalary class:");
 
-        System.out.print("Enter the hourly pay rate of the Employee: ");
+        System.out.print("Enter the hourly pay rate of the Employee: $");
         double hourlyRate = scan.nextDouble();
 
         System.out.print("Enter the insurance rate of the Employee in percentage: ");
@@ -36,11 +38,11 @@ public class EmployeeSalaryDriver {
         empSalObj1.setHours(40);
         System.out.println(empSalObj1.toString());
 
-        System.out.println("The monthly salary of the Employee is: " + empSalObj1.calcMonthlySalary());
-        System.out.println("The monthly insurance of the Employee is: " + empSalObj1.calcMonthlyInsurance());
-        System.out.println("The monthly pf of the Employee is: " + empSalObj1.calcMonthlyPfAmount());
-        System.out.println("The annual gross salary of the Employee is: " + empSalObj1.calcAnnualGrossSalary(bonus));
-        System.out.println("The gross annual net pay of the Employee is: " + empSalObj1.calcAnnualNetPay(bonus));
+        System.out.println("The monthly salary of the Employee is: $" + empSalObj1.calcMonthlySalary());
+        System.out.println("The monthly insurance of the Employee is: $" + empSalObj1.calcMonthlyInsurance());
+        System.out.println("The monthly pf of the Employee is: $" + empSalObj1.calcMonthlyPfAmount());
+        System.out.println("The annual gross salary of the Employee is: $" + empSalObj1.calcAnnualGrossSalary(bonus));
+        System.out.println("The gross annual net pay of the Employee is: $" + empSalObj1.calcAnnualNetPay(bonus));
 
         System.out.println("**************************************************");
         System.out.println("The details of empSalObj2 object are as follows:");
@@ -49,11 +51,11 @@ public class EmployeeSalaryDriver {
         empSalObj2.setHours(40);
         System.out.println(empSalObj2.toString());
 
-        System.out.println("The monthly salary of the Employee is: " + empSalObj2.calcMonthlySalary());
-        System.out.println("The monthly insurance of the Employee is: " + empSalObj2.calcMonthlyInsurance());
-        System.out.println("The monthly pf of the Employee is: " + empSalObj2.calcMonthlyPfAmount());
-        System.out.println("The annual gross salary of the Employee is: " + empSalObj2.calcAnnualGrossSalary(bonus));
-        System.out.println("The gross annual net pay of the Employee is: " + empSalObj2.calcAnnualNetPay(bonus));
+        System.out.println("The monthly salary of the Employee is: $" + empSalObj2.calcMonthlySalary());
+        System.out.println("The monthly insurance of the Employee is: $" + empSalObj2.calcMonthlyInsurance());
+        System.out.println("The monthly pf of the Employee is: $" + empSalObj2.calcMonthlyPfAmount());
+        System.out.println("The annual gross salary of the Employee is: $" + empSalObj2.calcAnnualGrossSalary(bonus));
+        System.out.println("The gross annual net pay of the Employee is: $" + empSalObj2.calcAnnualNetPay(bonus));
 
         empSalObj2.setHourlyRate(35.0);
         empSalObj2.setInsuranceRate(12.50);
@@ -65,10 +67,10 @@ public class EmployeeSalaryDriver {
 
         System.out.println("The details of empSalObj2 object are as follows:");
         System.out.println(empSalObj2.toString());
-        System.out.println("The monthly salary of the Employee is: " + empSalObj2.calcMonthlySalary());
-        System.out.println("The monthly insurance of the Employee is: " + empSalObj2.calcMonthlyInsurance());
-        System.out.println("The monthly pf of the Employee is: " + empSalObj2.calcMonthlyPfAmount());
-        System.out.println("The annual gross salary of the Employee is: " + empSalObj2.calcAnnualGrossSalary(bonusNew));
-        System.out.println("The gross annual net pay of the Employee is: " + empSalObj2.calcAnnualNetPay(bonusNew));
+        System.out.println("The monthly salary of the Employee is: $" + empSalObj2.calcMonthlySalary());
+        System.out.println("The monthly insurance of the Employee is: $" + empSalObj2.calcMonthlyInsurance());
+        System.out.println("The monthly pf of the Employee is: $" + empSalObj2.calcMonthlyPfAmount());
+        System.out.println("The annual gross salary of the Employee is: $" + empSalObj2.calcAnnualGrossSalary(bonusNew));
+        System.out.println("The gross annual net pay of the Employee is: $" + empSalObj2.calcAnnualNetPay(bonusNew));
     }
 }
